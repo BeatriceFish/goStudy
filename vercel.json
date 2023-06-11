@@ -1,7 +1,13 @@
 {
     "functions": {
-      "api/myapp/main.go": {
-        "runtime": "vercel-go@1.3.1"
+      "api/myapp.go": {
+        "runtime": "go1.x"
       }
-    }
+    },
+    "builds": [
+      {
+        "src": "api/myapp.go",
+        "use": "@vercel/go"
+      }
+    ]
   }
