@@ -1,13 +1,12 @@
 {
-    "functions": {
-      "api/myapp.go": {
-        "runtime": "go1.x"
-      }
-    },
+    "version": 2,
     "builds": [
       {
-        "src": "api/myapp.go",
-        "use": "@vercel/go"
+        "src": "api/*.go",
+        "use": "@vercel/go",
+        "config": {
+          "maxLambdaSize": "15mb"
+        }
       }
     ]
   }
