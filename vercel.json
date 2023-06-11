@@ -1,12 +1,8 @@
 {
-    "version": 2,
-    "builds": [
+    "rewrites": [
       {
-        "src": "api/*.go",
-        "use": "@vercel/go",
-        "config": {
-          "maxLambdaSize": "15mb"
-        }
+        "source": "/api/hello",
+        "destination": "/api/hello.go"
       }
     ]
   }
