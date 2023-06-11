@@ -1,0 +1,6 @@
+dist/
+go.sum
+*.o
+*.a
+*.so
+*.exe
