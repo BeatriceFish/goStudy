@@ -2,7 +2,7 @@
     "functions": {
       "api/myapp": {
         "runtime": "vercel-go@1.3.1",
-        "src": "myapp.go"
+        "entrypoint": "myapp.go"
       }
     }
   }
